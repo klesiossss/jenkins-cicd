@@ -12,7 +12,7 @@ pipelineJob('theme-park-job') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/klesiossss/spring-boot-api-example.git'
+                        url 'https://github.com/klesiossss/business-api-cicd.git'
                     }
                     branch 'master'
                 }
@@ -26,7 +26,7 @@ pipelineJob('theme-park-job-docker') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/klesiossss/spring-boot-api-example.git'
+                        url 'https://github.com/klesiossss/business-api-cicd.git'
                     }
                     branch 'master'
                     scriptPath('Jenkinsfile-docker')
@@ -41,7 +41,7 @@ pipelineJob('theme-park-job-aws') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/klesiossss/spring-boot-api-example.git'
+                        url 'https://github.com/klesiossss/business-api-cicd.git'
                     }
                     branch 'master'
                     scriptPath('Jenkinsfile-aws')

@@ -2,7 +2,6 @@ FROM jenkins/jenkins:2.375.1-jdk11
 
 USER root
 RUN curl -sSL https://get.docker.com/ | sh
-RUN groupadd docker
 RUN useradd -r -g docker jenkins
 USER jenkins
 

@@ -2,7 +2,7 @@ FROM jenkins/jenkins:2.375.1-jdk11
 
 USER root
 RUN curl -sSL https://get.docker.com/ | sh
-RUN usermod -aG docker jenkins
+RUN usermod -a -G docker jenkins
 USER jenkins
 
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt

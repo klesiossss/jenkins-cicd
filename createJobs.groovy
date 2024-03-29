@@ -14,7 +14,7 @@ pipelineJob('theme-park-job') {
                     remote {
                         url 'https://github.com/klesiossss/business-api-cicd.git'
                     }
-                    branch 'master'
+                    branch 'develop'
                 }
             }
         }
@@ -28,7 +28,7 @@ pipelineJob('theme-park-job-docker') {
                     remote {
                         url 'https://github.com/klesiossss/business-api-cicd.git'
                     }
-                    branch 'master'
+                    branch 'develop'
                     scriptPath('Jenkinsfile-docker')
                 }
             }
@@ -43,7 +43,7 @@ pipelineJob('theme-park-job-aws') {
                     remote {
                         url 'https://github.com/klesiossss/business-api-cicd.git'
                     }
-                    branch 'master'
+                    branch 'develop'
                     scriptPath('Jenkinsfile-aws')
                 }
             }

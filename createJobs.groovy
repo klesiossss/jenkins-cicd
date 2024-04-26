@@ -50,3 +50,19 @@ pipelineJob('theme-park-job-aws') {
         }
     }
 }
+
+pipelineJob('secret-manager-jk') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/klesiossss/secret-manager-jk.git'
+                    }
+                    branch 'master'
+                    scriptPath('secret-manager-jk')
+                }
+            }
+        }
+    }
+}
